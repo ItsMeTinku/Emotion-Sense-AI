@@ -81,6 +81,20 @@ EmotionSenseAI/
 ## 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+# Note
+## Contribution
+
+This project was originally developed as a basic emotion recommendation system. My contributions focused on enhancing the application's functionality, user experience, and analytics capabilities.
+
+### Key Contributions
+
+* Developed and improved the frontend interface.
+* Expanded the emotion recommendation dataset to provide more diverse and relevant suggestions.
+* Enhanced recommendation logic to generate a larger set of personalized tips.
+* Implemented emotion history tracking and data persistence.
+* Added mood analytics, trend charts, and emotion distribution visualizations.
+* Improved emotion analysis by considering historical emotional patterns rather than only the current mood entry.
+* Enhanced the overall workflow and user experience of the application.
 
 ---
 <div align="center">
