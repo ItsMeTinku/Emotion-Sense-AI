@@ -1,7 +1,6 @@
 # 🧠 EmotionSense AI
 
 <div align="center">
-  <img src="assets/logo.png" width="150" alt="EmotionSense AI Logo">
   <br>
   <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/AI-Powered-orange?style=for-the-badge" alt="AI Powered">
