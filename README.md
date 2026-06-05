@@ -11,8 +11,6 @@
 
 ---
 
-![EmotionSense AI Banner](assets/banner.png)
-
 ## 🌟 Overview
 **EmotionSense AI** is a state-of-the-art mental wellness monitoring and emotion detection system. It leverages advanced NLP techniques and voice recognition to provide real-time emotional insights, helping users track their mental state and generate detailed wellness reports.
 
