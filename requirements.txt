@@ -1,35 +1,25 @@
-# EmotionSense AI — Requirements
-# ================================
-# Install all with:
-#   pip install -r requirements.txt
-#
-# NOTE: torch + transformers are optional (heavy, ~2 GB).
-#       The app works without them using VADER + keyword scoring.
+# EmotionSense AI — pip install -r requirements.txt
 
-# ── Core GUI ──────────────────────────────────────────────────────────────────
+# Core GUI
 customtkinter>=5.2.0
-Pillow>=10.0.0                # image support for CTkImage
+Pillow>=10.0.0
 
-# ── NLP / Emotion Analysis ────────────────────────────────────────────────────
+# NLP
 vaderSentiment>=3.3.2
 textblob>=0.17.1
 nltk>=3.8.1
 
-# ── Charting & Data ───────────────────────────────────────────────────────────
+# Charts & Data
 matplotlib>=3.7.0
 pandas>=2.0.0
-openpyxl>=3.1.0              # Excel export
+openpyxl>=3.1.0
 
-# ── Reports ───────────────────────────────────────────────────────────────────
+# PDF Reports
 reportlab>=4.0.0
 
-# ── Voice Recognition ────────────────────────────────────────────────────────
+# Voice (install pyaudio separately — see README)
 SpeechRecognition>=3.10.0
-# PyAudio is platform-specific; install manually if needed:
-#   Windows : pip install pyaudio
-#   Linux   : sudo apt install portaudio19-dev && pip install pyaudio
-#   macOS   : brew install portaudio && pip install pyaudio
 
-# ── Optional: AI Model (best accuracy, needs ~2 GB disk + GPU/CPU time) ───────
+# Optional — best accuracy, heavy (~2 GB)
 # transformers>=4.35.0
 # torch>=2.0.0
