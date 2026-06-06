@@ -1,14 +1,11 @@
 """
 utils/helpers.py
-================
-Shared utility functions used across EmotionSense AI.
+Shared utilities for EmotionSense AI.
 """
 
 import os
 import subprocess
 import sys
-from datetime import datetime
-
 
 EMOTION_EMOJI = {
     "Happy":    "😊",
@@ -37,32 +34,23 @@ def get_emoji(emotion: str) -> str:
     return EMOTION_EMOJI.get(emotion, "🔵")
 
 
-def get_color(emotion: str) -> tuple[str, str]:
-    """Return (primary_hex, dark_hex) for the emotion."""
+def get_color(emotion: str) -> tuple:
     return EMOTION_GRADIENT.get(emotion, ("#7c6aff", "#4a3a99"))
 
 
-def format_datetime(dt_str: str) -> str:
-    """Format stored timestamp string for display."""
-    try:
-        dt = datetime.strptime(dt_str, "%Y-%m-%d %H:%M:%S")
-        return dt.strftime("%d %b %Y, %I:%M %p")
-    except Exception:
-        return dt_str
-
-
 def open_file(path: str):
-    """Open a file with the OS default application."""
-    if sys.platform.startswith("win"):
-        os.startfile(path)
-    elif sys.platform.startswith("darwin"):
-        subprocess.Popen(["open", path])
-    else:
-        subprocess.Popen(["xdg-open", path])
+    try:
+        if sys.platform.startswith("win"):
+            os.startfile(path)
+        elif sys.platform.startswith("darwin"):
+            subprocess.Popen(["open", path])
+        else:
+            subprocess.Popen(["xdg-open", path])
+    except Exception:
+        pass
 
 
-def stress_label(level: float) -> tuple[str, str]:
-    """Return (label, color) for a stress level value (0-100)."""
+def stress_label(level: float) -> tuple:
     if level < 25:
         return "Low 🟢", "#2ECC71"
     elif level < 50:
