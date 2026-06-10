@@ -14,7 +14,6 @@ Detected emotions: Happy, Sad, Angry, Anxious, Stressed,
 
 import re
 import json
-import random
 from typing import Optional
 
 # ---------------------------------------------------------------------------
@@ -46,70 +45,23 @@ EMERGENCY_PHRASES = [
 ]
 
 WELLNESS_TIPS: dict[str, list[str]] = {
-    "Happy":    [
-        "Keep spreading positivity — it's contagious! 🌟",
-        "Channel this energy into something creative. 🎨",
-        "Share your happiness with someone who needs it today. 💛",
-        "Write down what made you happy — revisit it on harder days. 📓",
-        "Use this good mood to tackle something you've been avoiding. 🚀",
-    ],
-    "Sad":      [
-        "It's okay to feel sad. Take it one breath at a time. 🌬️",
-        "Consider talking to a trusted friend or counsellor. 💬",
-        "A short walk outside can help lift your mood. 🚶",
-        "Put on your favourite music and let yourself feel it. 🎵",
-        "Write your feelings down — journalling helps process sadness. ✍️",
-        "Drink some water, eat something warm. Small self-care matters. 🍵",
-        "Remember: this feeling is temporary. You've survived hard days before. 💙",
-    ],
-    "Angry":    [
-        "Try box breathing: inhale 4s → hold 4s → exhale 4s → hold 4s. 🧘",
-        "Write down what made you angry — it helps release the charge. ✍️",
-        "Step outside for 5 minutes before responding to anything. 🌿",
-        "Physical movement like a brisk walk burns off anger energy. 🏃",
-        "Ask yourself: will this matter in 5 years? 🔭",
-        "Splash cold water on your face — it activates the calming reflex. 💧",
-    ],
-    "Anxious":  [
-        "Ground yourself: name 5 things you can see right now. 👀",
-        "Progressive muscle relaxation — tense each muscle group then release. 💪",
-        "Anxiety is your brain trying to protect you. Thank it, then breathe. 🧠",
-        "Write your worries down and ask: is this within my control? 📋",
-        "Try 4-7-8 breathing: inhale 4s, hold 7s, exhale 8s. 😮‍💨",
-        "Limit caffeine today — it amplifies anxiety significantly. ☕",
-        "Call or text someone you trust right now. 📱",
-    ],
-    "Stressed": [
-        "Break your workload into smaller, timed chunks (Pomodoro: 25 min on, 5 off). ⏱️",
-        "Even a 10-minute break dramatically reduces cortisol. ☕",
-        "Write a priority list — stress often comes from feeling out of control. 📝",
-        "Stretch your neck and shoulders — stress lives in the body too. 🤸",
-        "Say no to one thing today. Boundaries reduce stress. 🚫",
-        "Take 3 deep slow breaths right now before doing anything else. 🌬️",
-        "Remember: you don't have to solve everything today. 🗓️",
-    ],
-    "Excited":  [
-        "Use this excitement to tackle a goal you've delayed! 🚀",
-        "Channel it into planning something meaningful. 📋",
-        "Share your excitement — enthusiasm is infectious! 🎉",
-        "Write down what's exciting you so you can revisit this feeling. 📓",
-        "Excited energy is perfect for creative work. 🎨",
-    ],
-    "Fearful":  [
-        "Acknowledge your fear — it's a signal, not a verdict. 🔦",
-        "Speak to someone you trust about what's worrying you. 🤝",
-        "Ask yourself: what's the realistic worst case? Can I handle it? 🧩",
-        "Fear shrinks when you take one small action toward it. 👣",
-        "Slow your breathing — fear accelerates it, calm reverses it. 😮‍💨",
-        "Write the fear down. Named fears feel less powerful. ✍️",
-    ],
-    "Neutral":  [
-        "A calm mind is a powerful mind. 🧠",
-        "Try mindful journalling to explore your inner state. 📓",
-        "This is a great time to set an intention for the rest of your day. 🎯",
-        "Use this steady energy for focused, deep work. 💻",
-        "Check in with someone you haven't spoken to in a while. 📱",
-    ],
+    "Happy":    ["Keep spreading positivity — it's contagious! 🌟",
+                 "Channel this energy into something creative. 🎨"],
+    "Sad":      ["It's okay to feel sad. Take it one breath at a time. 🌬️",
+                 "Consider talking to a trusted friend or counsellor. 💬",
+                 "A short walk outside can help lift your mood. 🚶"],
+    "Angry":    ["Try box breathing: inhale 4s → hold 4s → exhale 4s. 🧘",
+                 "Writing down what made you angry can bring clarity. ✍️"],
+    "Anxious":  ["Ground yourself: name 5 things you can see right now. 👀",
+                 "Progressive muscle relaxation can ease anxiety quickly. 💪"],
+    "Stressed": ["Break your workload into smaller, timed chunks. ⏱️",
+                 "Even a 10-minute break dramatically reduces cortisol. ☕"],
+    "Excited":  ["Use this excitement to tackle a goal you've delayed! 🚀",
+                 "Channel it into planning something meaningful. 📋"],
+    "Fearful":  ["Acknowledge your fear — it's a signal, not a verdict. 🔦",
+                 "Speak to someone you trust about what's worrying you. 🤝"],
+    "Neutral":  ["A calm mind is a powerful mind. 🧠",
+                 "Try mindful journalling to explore your inner state. 📓"],
 }
 
 
@@ -192,8 +144,7 @@ class EmotionAnalyzer:
         primary = max(scores_pct, key=scores_pct.get)
         confidence = scores_pct[primary]
         stress_level = self._compute_stress(scores_pct)
-        all_tips = WELLNESS_TIPS.get(primary, WELLNESS_TIPS["Neutral"])
-        tips = random.sample(all_tips, min(2, len(all_tips)))
+        tips = WELLNESS_TIPS.get(primary, WELLNESS_TIPS["Neutral"])
 
         return {
             "primary_emotion": primary,
