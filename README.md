@@ -31,15 +31,15 @@ This project was built as an advanced final-year Computer Science project demons
 
 | Feature | Description |
 |---|---|
-| 🔍 **AI Emotion Analysis** | Multi-layer NLP engine using VADER, TextBlob, and optionally HuggingFace Transformers |
-| 🎙️ **Voice Input** | Speak your feelings — speech-to-text via Google Speech API |
-| 📊 **Analytics Dashboard** | Emotion frequency, stress trends, and weekly mood charts |
-| 📋 **History Log** | Full searchable record of all past analyses |
-| 📄 **PDF / CSV / Excel Reports** | One-click professional report generation |
-| 👤 **User Authentication** | Secure signup/login with SHA-256 password hashing |
-| ⚠️ **Emergency Detection** | Detects crisis language and surfaces helpline information |
-| 💬 **AI Chatbot Tips** | Context-aware wellness suggestions after each analysis |
-| 🌙 **Dark Mode UI** | Modern dark-themed interface built with CustomTkinter |
+|  **AI Emotion Analysis** | Multi-layer NLP engine using VADER, TextBlob, and optionally HuggingFace Transformers |
+|  **Voice Input** | Speak your feelings — speech-to-text via Google Speech API |
+|  **Analytics Dashboard** | Emotion frequency, stress trends, and weekly mood charts |
+|  **History Log** | Full searchable record of all past analyses |
+|  **PDF / CSV / Excel Reports** | One-click professional report generation |
+|  **User Authentication** | Secure signup/login with SHA-256 password hashing |
+|  **Emergency Detection** | Detects crisis language and surfaces helpline information |
+|  **AI Chatbot Tips** | Context-aware wellness suggestions after each analysis |
+|  **Dark Mode UI** | Modern dark-themed interface built with CustomTkinter |
 
 ---
 
