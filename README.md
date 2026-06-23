@@ -1,4 +1,4 @@
-# 🧠 EmotionSense AI
+#  EmotionSense AI
 ### AI-Powered Emotion Detection & Mental Wellness Monitoring System
 
 <div align="center">
