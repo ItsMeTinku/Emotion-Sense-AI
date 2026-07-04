@@ -14,7 +14,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 **EmotionSense AI** is a full-stack desktop application that uses Natural Language Processing (NLP) to detect emotions from text and voice input, track mood over time, visualize emotional patterns, and provide actionable mental wellness recommendations.
 
