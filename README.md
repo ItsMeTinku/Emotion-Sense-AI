@@ -27,7 +27,7 @@ This project was built as an advanced final-year Computer Science project demons
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Description |
 |---|---|
