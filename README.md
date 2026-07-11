@@ -179,7 +179,7 @@ Each result includes:
 
 ---
 
-## 🛡️ Emergency Detection
+##  Emergency Detection
 
 If the system detects phrases associated with self-harm or crisis thoughts:
 - An alert dialog is shown immediately
