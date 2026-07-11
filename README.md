@@ -202,7 +202,7 @@ If the system detects phrases associated with self-harm or crisis thoughts:
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - [ ] Facial expression emotion detection (OpenCV + DeepFace)
 - [ ] Real-time wearable integration (heart rate → stress)
