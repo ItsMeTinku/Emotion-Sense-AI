@@ -100,7 +100,7 @@ EmotionSenseAI/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 - Python 3.10 or higher
