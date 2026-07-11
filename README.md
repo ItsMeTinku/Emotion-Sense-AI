@@ -150,7 +150,7 @@ pip install transformers torch
 
 ---
 
-## 🧠 How the NLP Engine Works
+##  How the NLP Engine Works
 
 The emotion analysis uses a **3-tier fallback strategy**:
 
