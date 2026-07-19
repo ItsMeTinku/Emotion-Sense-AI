@@ -49,7 +49,7 @@ This project was built as an advanced final-year Computer Science project demons
 
 | Login Screen | Dashboard | Emotion Analysis |
 |---|---|---|
-| *(screenshot)* | *(screenshot)* | *(screenshot)* |
+
 
 ---
 
