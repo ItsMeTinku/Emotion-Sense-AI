@@ -47,7 +47,7 @@ This project was built as an advanced final-year Computer Science project demons
 
 > *Add screenshots here after running the app*
 
-| Login Screen | Dashboard | Emotion Analysis |
+
 ---
 
 ## 🗂️ Project Structure
