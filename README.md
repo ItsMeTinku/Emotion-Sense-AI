@@ -219,3 +219,7 @@ If the system detects phrases associated with self-harm or crisis thoughts:
 Made with ❤️ for mental wellness awareness<br>
 <i>EmotionSense AI — Know your mind, grow your life.</i>
 </div>
+
+<div align"center">
+Thanks for reading 
+</div>    
