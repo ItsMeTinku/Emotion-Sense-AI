@@ -206,6 +206,6 @@ Made with ❤️ for mental wellness awareness<br>
 <i>EmotionSense AI — Know your mind, grow your life.</i>
 </div>
 
-<div align"center">
+<div align="center">
 Thanks for reading 
 </div>    
