@@ -207,5 +207,5 @@ Made with ❤️ for mental wellness awareness<br>
 </div>
 
 <div align="center">
-<i>### Thanks for reading ❤️</i>
+<i>Thanks for reading ❤️</i>
 </div>    
