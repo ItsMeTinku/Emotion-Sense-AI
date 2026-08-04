@@ -209,22 +209,3 @@ Made with ❤️ for mental wellness awareness<br>
 <div align="center">
 <i>Thanks for reading ❤️</i>
 </div>    
-graph TD
-    User([User Device]) -->|HTTPS / WSS| Streamlit[Streamlit App / Backend]
-    Streamlit -->|REST API| Supabase[(Supabase PostgreSQL)]
-    
-    subgraph Core Modules
-        Dashboard[ Dashboard]
-        Appointments[📅 Appointments]
-        Customers[🧾 Customers]
-        Billing[💰 Billing]
-        Employees[👩💼 Employees]
-        Attendance[📌 Attendance]
-    end
-    
-    Streamlit --- Dashboard
-    Streamlit --- Appointments
-    Streamlit --- Customers
-    Streamlit --- Billing
-    Streamlit --- Employees
-    Streamlit --- Attendance
