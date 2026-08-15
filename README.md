@@ -174,7 +174,7 @@ If the system detects phrases associated with self-harm or crisis thoughts:
 
 ---
 
-## 📈 Technologies Used
+##  Technologies Used
 
 | Category | Technology |
 |---|---|
